@@ -21,6 +21,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -295,6 +296,7 @@
     <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\assets\font\fontawesome-webfont.svg" />
     <Content Include="Content\assets\img\header-bg.jpg" />
+    <Content Include="Content\assets\img\header-bg1.jpg" />
     <Content Include="Content\assets\img\icons\icon_behance.png" />
     <Content Include="Content\assets\img\icons\icon_dribbble.png" />
     <Content Include="Content\assets\img\icons\icon_facebook.png" />
