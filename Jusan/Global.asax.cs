@@ -5,13 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using DynamicMVC.Data;
-using DynamicMVC.Data.Interfaces;
-using DynamicMVC.Shared;
-using DynamicMVC.Shared.Interfaces;
-using DynamicMVC.Shared.Models;
-using DynamicMVC.UI.DynamicMVC;
-using DynamicMVC.UI.DynamicMVC.Interfaces;
 using UnityConfig = Jusan.App_Start.UnityConfig;
 
 namespace Jusan
@@ -30,18 +23,7 @@ namespace Jusan
             DynamicMVC.Shared.Container.EagerLoadedContainer = mvcContainer;
             DynamicMVC.Shared.UnityConfig.RegisterTypes(mvcContainer);
 
-            DynamicMVCUnityConfig.RegisterTypes(Container.GetConfiguredContainer());
-            UnityConfig.RegisterTypes(Container.GetConfiguredContainer());
-            ICreateDbContextManager createDbContextManager = new CreateDbContextManager(() => new Jusan.Models.ApplicationDbContext());
-            Container.RegisterInstance(createDbContextManager);
-            var applicationMetadataProvider = new ApplicationMetadataProvider(typeof(MvcApplication).Assembly, typeof(MvcApplication).Assembly, typeof(MvcApplication).Assembly);
-            Container.RegisterInstance<IApplicationMetadataProvider>(applicationMetadataProvider);
-            DynamicMVCContext.DynamicMvcManager = Container.Resolve<IDynamicMvcManager>();
-            Container.RegisterInstance(DynamicMVCContext.DynamicMvcManager);
-
-            DynamicMVCContext.DynamicMvcManager.RegisterDynamicMvc();
-            DynamicMVCContext.DynamicMvcManager.SetDynamicRoutes(RouteTable.Routes);
-            //DynamicMVCContext.DynamicMvcManager.Options.DynamicDropDownRecordLimit = 1;
+           
         }
     }
 }
