@@ -231,9 +231,11 @@
     <Content Include="Content\assets\img\icons\icon_testimonials.png" />
     <Content Include="Content\assets\img\icons\icon_twitter.png" />
     <Content Include="Content\assets\img\icons\icon_works.png" />
+    <Content Include="Content\assets\img\it pro.png" />
     <Content Include="Content\assets\img\port01.jpg" />
     <Content Include="Content\assets\img\jokeypo.jpg" />
     <Content Include="Content\assets\img\port03.jpg" />
+    <Content Include="Content\assets\img\web developer.png" />
     <Content Include="Content\assets\js\bootstrap.js" />
     <Content Include="Content\assets\js\Chart.js" />
     <Content Include="Content\assets\js\jquery.min.js" />
